@@ -1,12 +1,11 @@
 \documentclass{beamer}
+\usetheme{metropolis}
 
 \usepackage{graphicx}
 \graphicspath{{graphics/}}
 
-\usetheme{metropolis}
-
 \title{Job Fair}
-\subtitle{A road map to 2018.}
+\subtitle{A road map to 2018 JobFair}
 \date{\today}
 \author{Bruno Vunderl}
 \institute{Klub studenata elektrotehnike}
@@ -14,7 +13,7 @@
 \begin{document}
 	\maketitle
 	
-	\section{The Project}
+	\section{History of the universe}
 	
 	\begin{frame}{History}
 		\begin{figure}
@@ -30,9 +29,125 @@
 			\includegraphics[width=5cm]{jf-14}
 			\vspace{1cm}
 			\includegraphics[width=5cm]{jf-15}
-			\caption{Job Fair 2014. i 2015. web}
+			\caption{Job Fair 2014 and 2015 web}
 		\end{figure}
 	\end{frame}
 
+	\begin{frame}{History}
+		Main guidelines
+		\begin{itemize}
+			\item simplify development
+			\item show time and date of the event
+			\item have a CV form for students
+			\item maybe show the presentation timetable
+			\item development from ground up every year
+			\item done by a single developer in PHP and frontend stuff
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{History}
+		Problems
+		\begin{itemize}
+			\item unsustainable - start from scratch every year
+			\item lack of information
+			\item no version control
+			\item often edited directly in production
+			\item design and usability can be improved on
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{History}
+		\hspace{2cm}
+		\begin{figure}
+			\includegraphics[width=8cm]{joza}
+			\caption{Now, this is better}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame}{History}
+		\begin{figure}
+			\includegraphics[width=8cm]{jf-17}
+			\caption{Job Fair 2017 web}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame}{History}
+		Main ideas in the beginning
+		\begin{itemize}
+			\item buy the design, make backend quickly
+			\item still almost one pager
+			\item add news section
+			\item online company application
+			\item use git (mind blown!)
+			\item language support
+			\item use rails, pgsql, slim...
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{History}
+		Current state
+		\begin{itemize}
+			\item switched to docker
+			\item added new pages (press, past, floor plan)
+			\item added API for mobile
+			\item dynamical company listing and timetable (modals)
+			\item added a lot of information to company orders
+			\item we are building a tower on top of shack foundations
+		\end{itemize}
+	\end{frame}
+
+	\section{Project organization}
+	
+	\begin{frame}{Project organization}
+		Main ideas now
+		\begin{itemize}
+			\item build an expandable structure
+			\item organize company ux around web
+			\item make mass emails and jobfair@kset.org obsolete
+			\item allow easy integration of mobile and other apps
+			\item start on time, don't creep the features
+			\item learn agile
+			\item involve more people
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Agile / Scrum}
+		\begin{figure}
+			\includegraphics[width=10cm]{scrum}
+			\caption{Standard Scrum workflow}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame}{Agile / Scrum}
+		Scrum artifacts and events
+		\begin{itemize}
+			\item \textbf{sprint} - a given period of time (1-3 weeks)
+			\item \textbf{product backlog} - contains all tasks vital for the project
+			\item \textbf{sprint backlog} - tasks that will be done in given sprint
+			\item \textbf{sprint planing} - periodical meeting where sprint backlog is filled and current progress is reviewed
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Agile / Scrum}
+		Scrum roles
+		\begin{itemize}
+			\item \textbf{product owner} - makes sure product will satisfy the client
+			\item \textbf{scrum master} - makes sure team delivers on time, protects the team from greedy product owners
+			\item \textbf{developer} - makes shit done :)
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Agile / Scrum}
+		How will we use it?
+		\begin{itemize}
+			\item Plan features in the beginning
+			\item Freeze the design
+			\item Split into teams
+			\item Track the development progress
+			\item Work hard but don't put too much stress on people
+		\end{itemize}
+	\end{frame}
+	
+	\section{Features we will build}
 
 \end{document}
