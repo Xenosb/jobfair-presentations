@@ -1,11 +1,14 @@
 \documentclass{beamer}
 \usetheme{metropolis}
 
+\usepackage{adjustbox}
+\usepackage{forest}
 \usepackage{graphicx}
 \graphicspath{{graphics/}}
 
-\title{Job Fair}
-\subtitle{A road map to 2018 JobFair}
+
+\title{Job Fair Website}
+\subtitle{A road map to 2018 Job Fair}
 \date{\today}
 \author{Bruno Vunderl}
 \institute{Klub studenata elektrotehnike}
@@ -148,6 +151,88 @@
 		\end{itemize}
 	\end{frame}
 	
-	\section{Features we will build}
+	\section{Initial featureset}
+	
+	\begin{frame}{Features}
+		\begin{figure}
+			\begin{forest}
+				for tree={%
+				edge path={\noexpand\path[\forestoption{edge}] (\forestOve{\forestove{@parent}}{name}.parent anchor) -- +(0,-12pt)-| (\forestove{name}.child anchor)\forestoption{edge label};}
+				}
+				[
+				Job Fair IT, calign=child,calign child=2
+					[Website]
+					[Business logic]
+					[Mobile]
+				]
+			\end{forest}
+			\caption{Initial project parts}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame}{Website}
+		\begin{figure}
+			\begin{forest}
+				for tree={%
+					edge path={\noexpand\path[\forestoption{edge}] (\forestOve{\forestove{@parent}}{name}.parent anchor) -- +(0,-12pt)-| (\forestove{name}.child anchor)\forestoption{edge label};}
+				}
+				[Website
+					[Frontpage]
+					[News]
+					[Press]
+					[Past years]
+				]
+			\end{forest}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame}{Website}
+		How will we use it?
+		\begin{itemize}
+			\item Plan features in the beginning
+			\item Freeze the design
+			\item Split into teams
+			\item Track the development progress
+			\item Work hard but don't put too much stress on people
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Features}
+		\begin{figure}
+			\begin{adjustbox}{width=\linewidth}
+			\begin{forest}
+				for tree={%
+					edge path={\noexpand\path[\forestoption{edge}] (\forestOve{\forestove{@parent}}{name}.parent anchor) -- +(0,-12pt)-| (\forestove{name}.child anchor)\forestoption{edge label};}
+				}
+				[Business logic, calign=child,calign child=3
+					[Company application]
+					[Student CVs]
+					[Website management]
+					[User management]
+					[APIs]
+				]
+			\end{forest}
+			\end{adjustbox}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame}{Features}
+		\begin{figure}
+			\begin{forest}
+				for tree={%
+					edge path={\noexpand\path[\forestoption{edge}] (\forestOve{\forestove{@parent}}{name}.parent anchor) -- +(0,-12pt)-| (\forestove{name}.child anchor)\forestoption{edge label};}
+				}
+				[Mobile, calign=child,calign child=2
+					[For companies]
+					[For students]
+					[For organizers?]
+				]
+			\end{forest}
+		\end{figure}
+	\end{frame}
+	
+	\section{Timeline and parallel development}
+	
+	\section{Teams and roles}
 
 \end{document}
