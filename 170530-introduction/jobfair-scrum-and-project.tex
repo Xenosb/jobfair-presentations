@@ -1,6 +1,7 @@
 \documentclass{beamer}
 \usetheme{metropolis}
 
+\usepackage{pgfgantt}
 \usepackage{adjustbox}
 \usepackage{forest}
 \usepackage{graphicx}
@@ -279,6 +280,35 @@
 	
 	\section{Timeline and parallel development}
 	
+	\begin{frame}{Project timeline}
+		\begin{figure}
+			\resizebox{!}{.7\textheight}{
+				\begin{ganttchart}{1}{24}
+					\gantttitlelist{6,7,8,9,10,11,12,1,2,3,4,5}{2} \\
+					\ganttbar{Solution design}{1}{1} \\
+					\ganttmilestone{Design freeze}{1} \ganttnewline
+					\ganttbar{Web development}{2}{15} \ganttnewline
+					\ganttbar{Backend development}{2}{15} \ganttnewline
+					\ganttbar{Mobile development}{8}{15} \ganttnewline
+					\ganttmilestone{Development freeze}{15} \ganttnewline
+					\ganttbar{Production}{15}{23} \\
+					\ganttmilestone{Event}{23} \ganttnewline
+				\end{ganttchart}
+			}
+		\end{figure}
+	\end{frame}
+	
 	\section{Teams and roles}
+	
+	\section{Surprise}
+	
+	\begin{frame}{Beer}
+		\begin{figure}
+			\includegraphics[width=8cm]{beer}
+			\caption{Free beer every sprint planning}
+		\end{figure}
+	\end{frame}
+
+	\section{Thanks}
 
 \end{document}
